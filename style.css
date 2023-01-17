@@ -12,6 +12,8 @@ body {
 
     font-family: 'Rubik', sans-serif;
     color: #FFD369;
+
+    background-color: #171b22;
 }
 
 p {
@@ -26,6 +28,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    box-shadow: 0px 0px 30px 10px #11141a;
 }
 
 .search-bar-cont {
@@ -118,6 +122,8 @@ p {
     width: 40vw;
     padding: 1em;
     background-color: #222831;
+
+    box-shadow: 0px 0px 30px 10px #11141a;
     
 }
 
