@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Teller</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" sizes="32x32">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+  <div class="error-modal">
+    <button onclick="ModalDis()" class="x-btn">X</button>
+
+    <div class="error-text">Error: city not found</div>
+  </div>
+
+  <div class="warpper">
+    <div class="search-bar-cont">
+      <button class="search-btn" onclick="CityVerefication()"> <span class="material-symbols-outlined">search</span> </button>
+      <input class="search-bar" type="text" placeholder="Enter your city">
+    </div>
+    <div class="card">
+      <p class="city"></p>
+      <p class="date"></p>
+      <div class="temp-cont">
+        <p class="temp c"></p>
+        <p class="temp f"></p>
+      </div>
+      <img class="weather-icon" src="" alt="Weather icon display">
+      <p class="status"></p>
+      <p class="extra-data-title"></p>
+      <div class="extra-data-cont">
+        <p class="humidity"></p>
+        <p class="min-temp"></p>
+        <p class="max-temp"></p>
+        <p class="wind-speed"></p>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

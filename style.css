@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+
+    font-family: 'Rubik', sans-serif;
+    color: #FFD369;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.warpper {
+    width: 30vw;
+    aspect-ratio: 5/7;
+    background-color: #222831;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-bar-cont {
+    height: 10%;
+
+    display: flex;
+}
+
+.search-btn {
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: none;
+    border: none;
+    background-color: #222831;
+    position: relative;
+
+    display: grid;
+    place-items: center;
+    margin-right: 10px;
+    /* border-right: 3px solid #FFD369; */
+}
+
+.search-btn::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 80%;
+    z-index: 10;
+    right: 0;
+    background-color: #FFD369;
+}
+
+.search-btn span {
+    font-size: 2.5rem;
+    color: #FFD369;
+}
+
+.search-bar {
+    height: 100%;
+    width: 100%;
+    background-color: #222831;
+    border: none;
+
+    font-size: 2em;
+    color: #FFD369;
+    font-family: inherit;
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+.card {
+    height: 90%;
+    padding: 2em;
+    background-color: #393E46;
+    text-align: center;
+}
+
+.city {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.date {
+    font-size: 1rem;
+}
+
+.temp {
+    font-size: 3rem;
+}
+
+.weather-icon {
+    width: 50%;
+}
+
+.status {
+    font-size: 2rem;
+}
+
+.extra-data-title {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+/* ERROR */
+.error-modal {
+    display: none;
+    position: absolute;
+    width: 40vw;
+    padding: 1em;
+    background-color: #222831;
+    
+}
+
+.x-btn {
+    position: absolute;
+    top: 1;
+    left: 1;
+    color: red;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.error-text {
+    font-size: 2em;
+    text-align: center;
+    padding: 2em 5em;
+    color: red;
+}
