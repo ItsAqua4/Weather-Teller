@@ -17,12 +17,27 @@ body {
 }
 
 p {
-    margin: 5px 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 850px) {
+    .warpper {
+        width: 80vw;
+        aspect-ratio: 5/10;
+        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .warpper {
+        width: 30vw;
+        aspect-ratio: 5/7;
+    }
 }
 
 .warpper {
-    width: 30vw;
-    aspect-ratio: 5/7;
+    /* width: 30vw; */
+    /* aspect-ratio: 5/7; */
     background-color: #222831;
 
     display: flex;
@@ -63,7 +78,7 @@ p {
 }
 
 .search-btn span {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     color: #FFD369;
 }
 
@@ -84,22 +99,22 @@ p {
 
 .card {
     height: 90%;
-    padding: 2em;
+    padding: 1.5em;
     background-color: #393E46;
     text-align: center;
 }
 
 .city {
-    font-size: 5rem;
+    font-size: 4.5em;
     margin: 0;
 }
 
 .date {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .temp {
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .weather-icon {
@@ -107,19 +122,20 @@ p {
 }
 
 .status {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .extra-data-title {
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 /* ERROR */
 .error-modal {
     display: none;
     position: absolute;
-    width: 40vw;
+    width: 40em;
     padding: 1em;
     background-color: #222831;
 
