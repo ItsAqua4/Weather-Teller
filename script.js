@@ -1,6 +1,5 @@
 //TODO LIST:
-//1: MAKE THE WEBSITE RESPONSIVE (MAKE IT FUNCTIONAL FOR MOBILE TOO)
-//2: MAKE A FORCAST CARD (FOR HOW MUCH DAYS I CHOOSE)
+//1: MAKE A FORCAST CARD (FOR HOW MUCH DAYS I CHOOSE)
 
 //VARIABLES
 const apiKey = "4641c1f91e969c85d09295d07fa96d12"
@@ -43,11 +42,9 @@ const fecthWeather =  async function () {
         throw new Error(dataNow.message)
       }
     } else {
-      console.log("Data inside try", dataNow)
       return dataNow
     }
   } catch (error) {
-    console.log(error)
     ModalPopUp(error)
   }
 }
@@ -84,8 +81,6 @@ function WriteData() {
     weatherData.maxTemp = data.main.temp_max
     weatherData.windSpeed = data.wind.speed
 
-    console.log(weatherData.mainStatus)
-
     SetData()
   })
 }
@@ -112,7 +107,6 @@ function GetSRC() {
       return "https://cdn-icons-png.flaticon.com/512/1163/1163634.png"
       break;
     default :
-      console.log("Returned Defualt")
       return "https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
       break;
   }
@@ -143,10 +137,8 @@ function GetDate() {
 
 //POP UP MODAL FUNCTION
 function ModalPopUp(error) {
-  console.log("work")
   modalText.innerHTML = error
   modal.style.display = "block"
-  console.log(modal.style)
 }
 
 //MAKE MODAL DISAPEAR
