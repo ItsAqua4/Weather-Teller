@@ -58,6 +58,8 @@ cityInputHTML.addEventListener("keyup", function(event) {
 
 //CITY VEREFICATION
 function CityVerefication() {
+  ModalDis()
+
   weatherData.city = cityInputHTML.value
 
   if (weatherData.city.includes(" ")) {

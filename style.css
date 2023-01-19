@@ -24,7 +24,10 @@ p {
     .warpper {
         width: 80vw;
         aspect-ratio: 5/10;
-        
+    }
+
+    .error-modal {
+        width: 80vw;
     }
 }
 
@@ -32,6 +35,10 @@ p {
     .warpper {
         width: 30vw;
         aspect-ratio: 5/7;
+    }
+
+    .error-modal {
+        width: 40em;
     }
 }
 
@@ -134,7 +141,7 @@ p {
 .error-modal {
     display: none;
     position: absolute;
-    width: 40em;
+    /* width: 40em; */
     padding: 1em;
     background-color: #222831;
 
@@ -157,6 +164,6 @@ p {
 .error-text {
     font-size: 2em;
     text-align: center;
-    padding: 2em 5em;
+    padding: 2em 0;
     color: red;
 }
